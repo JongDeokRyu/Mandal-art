@@ -1,0 +1,19 @@
+.detail-menu-modal {
+    background-color: rgba(124, 14, 226, 0.863);
+    width: 40%;
+    min-width: 300px;
+    max-width: 600px;
+    height: 80%;
+    overflow-y: auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    padding: 5px;
+    transform: translate(-50%, -50%);
+    z-index: 1011;
+}
+
+  .button-position {
+      margin-top: 85%;
+        align-content :center;
+    }

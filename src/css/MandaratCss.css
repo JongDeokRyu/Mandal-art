@@ -1,0 +1,123 @@
+/* *{
+    margin-left : auto;
+    margin-right : auto;
+    display: block;
+    box-sizing: border-box;
+} */
+
+
+.mantramaBlockStyle {
+    outline: none;
+    border: 1px solid black;
+    border-radius: 1px;
+    padding: 20px;
+    width: 100px;
+    height: 60px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    background-color: #dddddd;
+    cursor: pointer;
+    transition: 1s;
+    position: relative;
+  }
+
+.mantramaBlockStyle:hover {
+    opacity: 0.2;
+}
+
+.mantramaMainBlockStyle{
+    outline: none;
+    border: 1px solid black;
+    border-radius: 1px;
+    padding: 10px;
+    width: 100px;
+    height: 60px;
+    font-size: 15px;
+    font-weight: 1000;
+    font-family: "Last Ninja", Impact, fantasy;
+    background-color: #dddddd;
+    cursor: pointer;
+    transition: 1s;
+    position: relative;
+}
+
+.mantramaMainBlockStyle:hover {
+    opacity: 0.2;
+    visibility: visible;
+}
+
+  .mantramaTable {
+    margin: 0 0 0 20px; 
+    text-align: center;
+    border-radius: 5px; 
+    background-color: white;
+    max-width : 930px;
+    height : 600px;
+    display: inline-block;
+  }
+
+  .mantramaSubTableStyle{
+    box-sizing: border-box;
+    border-left: 4px solid gray;
+    border-top: 4px solid gray;
+  }
+
+  .mantramaSubTableStyle:nth-of-type(3n+1){
+    box-sizing: border-box;
+    border-right: 4px solid gray;
+  }
+
+  .mantramaSubTableStyle:nth-of-type(8){
+    box-sizing: border-box;
+    border-bottom: 4px solid gray;
+  }
+
+  .mantramaSubTableStyle:nth-of-type(9){
+    box-sizing: border-box;
+    border-bottom: 4px solid gray;
+  }
+  .mantramaSubTableStyle:nth-of-type(10){
+    box-sizing: border-box;
+    border-bottom: 4px solid gray;
+  }
+    
+.input-tooltipbox{
+  position: relative; 
+  display: inline-block;
+}
+.tooltipbox {
+  visibility: hidden; 
+  width: 200px; 
+  background-color: white; 
+  color: black; 
+  text-align: center; 
+  border-radius: 10px; 
+  padding: 10px 5px; 
+  position: absolute; 
+  z-index: 1001; 
+  top: inherit; 
+  left: inherit; 
+  margin-left: -105px; 
+}
+
+.input-tooltipbox:hover .tooltipbox {
+  transition-delay: 0.8s;
+  visibility: visible;
+  top : -50px;
+  left : 40px;
+}
+
+.tooltipbox:after {
+  border-top:10px solid white;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 0px solid transparent;
+  content:"";
+  position:absolute;
+  left:40px;
+ }
+
+
+ .listTest {
+   background-color: white;
+ }

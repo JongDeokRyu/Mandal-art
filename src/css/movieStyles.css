@@ -1,0 +1,175 @@
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .loader {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+  }
+  
+  .movies {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 2fr));
+    grid-gap: 10px;
+    width: 50%;
+    padding-top: 40px;
+    margin-top: 10px;
+  }
+  
+  p {
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.movie__img {
+    position: relative;
+    max-width: 200px;
+    height: 300px;
+    width: 100%;
+  }
+  /* @media screen and (max-width: 1090px) {
+    .movies {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+  } */
+
+  
+
+
+  .movie {
+    background-color: white;
+    margin-bottom: 70px;
+    font-weight: 300;
+    padding: 20px;
+    border-radius: 5px;
+    color: #adaeb9;
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) 2fr;
+    grid-gap: 20px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+      0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  }
+  
+  .movie__title,
+  .movie__year {
+    margin: 0;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  
+  .movie__title a {
+    margin-bottom: 5px;
+    font-size: 24px;
+    color: #2c2c2c;
+    text-decoration: none;
+  }
+  
+  .movie__genres {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 0px;
+  }
+  
+  .movie__genres li,
+  .movie__year {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+
+  .noneScrollBar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .MovieRank th {
+    text-align: center;
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  .MovieRank thead tr:nth-child(2) th{
+    font-size: 10px;
+  }
+
+  .movieRankTable td{
+    text-align: center;
+  }
+
+  .rankTable {
+    color:black;
+    background-color: white;
+    border-radius: 10px;
+    border: 5px solid gr;
+    overflow: auto;
+    max-height: 400px;
+    max-width:  740px;
+    box-shadow: 5px 5px gray;
+    margin-left: 2.7%;
+  }
+
+.MovieRank table {
+    table-layout: fixed;
+    width:500px;
+  }
+/* Table Header CSS */
+
+
+/* 영화이름 CSS */
+.rankTable thead :first-child :first-child{
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  left: 0;
+  z-index: 5;
+  top : 0;
+  background-color: #ffffff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* thead의 첫번째 tr의 첫번째 th를 제외한 나머지 CSS */
+.rankTable thead :first-child :not(:first-child){
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  z-index: 4;
+  top : 0;
+  background-color: #ffffff;
+}
+
+/* thead의 두번째 tr의 모든 th CSS */
+.rankTable tr:last-child th {
+  position: sticky;
+  position: -webkit-sticky; /* for Safari */
+  top : 36.4px;
+  z-index: 4;
+  background-color: white;
+}
+
+
+/* Table Body CSS */
+
+/* tbody의 첫번째 td CSS */
+.rankTable tbody tr :nth-child(1) {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-weight: 900 !important;
+}
+/* tbody의 모든 td CSS */
+.rankTable td {
+  padding :5px;
+  border-bottom: 0.3px solid gray;
+}

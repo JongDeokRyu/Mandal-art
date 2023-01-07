@@ -1,0 +1,14 @@
+.Header-Style{
+    height: 100px; 
+    background-color: rgba(255,0,0,.1);
+}
+
+.Image-Size{
+    width: 100px; 
+    height: 120px;
+}
+
+.Header-Image-Size{
+    width: 100px; 
+    height: 60px;
+}

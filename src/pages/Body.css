@@ -1,0 +1,19 @@
+.Create-Border-Button{
+    float: right;
+    margin-right :5%;
+    margin-bottom: 2%;
+}
+
+.Modal-Index{
+    z-index: 1011;
+}
+
+.Card-header{
+    background-color: #282c34;
+    border-color :aliceblue;
+    margin-top: 3%;
+    /* border-width: 3px; */
+    /* border-style : dashed; */
+    text-align: center;
+    color : white;
+}
